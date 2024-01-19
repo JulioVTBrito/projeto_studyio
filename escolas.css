@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+body, ul, li, p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.principal-txt{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+.principal-txt > h1 {
+    font-family:'Delicious Handrawn', cursive;
+}
+
+.nav {
+    background-image: url(img/Descobrir.png);
+    height: 58.6em;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0px 1px 10px black;
+}
+
+
+.header {
+  background : #f48200;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: auto;
+  margin: 0 auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3em;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.397);
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title > img{
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    width: 3.2em;
+    height: 3.2em;
+    padding: 0%;
+    margin: 0%;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: #00C2F5;
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+}
+
+#inscreva-se-btn:hover{
+    background-color: #00C2F5;
+    border-color: #00C2F5;
+    color:white;
+    transition: 0.3s ;
+}
+
+h1, p{
+    font-weight: 200;
+    color: white;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.pesquisa {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#estado {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;
+    background-position: 218px center;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #ddd;
+}
+
+.pesquisa h2 {
+    text-align: center;
+    font-size: 3em;
+}

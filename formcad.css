@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+body, ul, li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.principal-txt{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+.principal-txt > h1 {
+    font-family:'Delicious Handrawn', cursive;
+}
+
+.header {
+  background : #f48200;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: auto;
+  margin: 0 auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3em;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.759);
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title > img{
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    width: 3.2em;
+    height: 3.2em;
+    padding: 0%;
+    margin: 0%;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: #00C2F5;
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+  padding: 10px;
+  border-radius: 10px;
+  border-color: white;
+  border-style: solid;
+}
+
+#inscreva-se-btn:hover{
+  background-color: #00C2F5;
+  border-color: #00C2F5;
+  color:white;
+  transition: 0.3s ;
+}
+
+.principal-txt > h1 {
+    font-weight: 200;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+
+:root {
+    --input-linear: linear-gradient(120deg, #ffe0ba, #f48200);
+    --input-error: red;
+    --button-linear: linear-gradient(120deg, #ffc681, #f48200, #f48200);
+    --button-disabled: #acacac;
+    --button-success: rgb(18, 151, 107);
+    --white: #fff;
+    --black: #303030;
+    --gray: #787878;
+    --light-gray: #cfcfcf;
+    --border-height: 1px;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .login {
+    margin-top: 1px;
+    height: 88.5vh;
+    background: var(--input-linear);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login__container {
+    min-height: 450px;
+    width: 350px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login__title {
+    margin-bottom: 32px;
+    color: var(--black);
+  }
+  
+  .login__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login__input {
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: unset;
+    outline: none;
+    position: relative;
+  }
+  
+  .login__input-border {
+    height: var(--border-height);
+    width: 100%;
+    margin-bottom: 16px;
+    background: var(--light-gray);
+    transition: .3s ease-in-out;
+  }
+  
+  .login__input-border::after {
+    content: '';
+    display: block;
+    height: var(--border-height);
+    width: 0;
+    margin-bottom: 16px;
+    background: var(--input-linear);
+    transition: .3s ease-in-out;
+  }
+  
+  .login__input:focus + .login__input-border::after {
+    width: 100%;
+  }
+  
+  .login__input-border.error {
+    background: var(--input-error);
+  }
+  
+  .login__input-border.error::after {
+    background: var(--input-error);
+  }
+  
+  .login__submit {
+    height: 48px;
+    width: 100%;
+    padding-left: 8px;
+    outline: none;
+    position: relative;
+    background: var(--button-linear);
+    background-size: 200%;
+    margin-bottom: 32px;
+    margin-top: 20px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  
+  .login__submit:disabled {
+    background: var(--button-disabled);
+    cursor: not-allowed;
+  }
+  
+  .login__submit:hover {
+    background-position: right;
+  }
+  
+  .login__submit.success {
+    background: var(--button-success);
+  }
+  
+  .login__submit.error {
+    background: var(--input-error);
+  }
+  
+  .login__reset {
+    font-size: 12px;
+    color: var(--gray);
+    text-decoration: none;
+  }
